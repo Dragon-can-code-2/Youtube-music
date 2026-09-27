@@ -38,6 +38,7 @@ export const init = async () => {
         moodDiv.className = "flex gap-5 mb-10"
         moods.forEach(e => {
             const p = document.createElement("a");
+            a.setAttribute("data-navigo", "");
             p.href = `/moods/${e.slug}`
             p.innerText = e.name;
             p.className = "bg-black text-white px-4 py-2 rounded-xl hover:bg-black/20"
@@ -61,6 +62,7 @@ export const init = async () => {
         quickpick.forEach(e => {
 
             const item = document.createElement("a");
+            item.setAttribute("data-navigo", "");
             item.href = `/playlists/details/${e.slug}`
             item.className = "flex items-center gap-4 mb-4 hover:bg-white/20";
 
@@ -114,6 +116,7 @@ export const init = async () => {
 
         album.forEach(e => {
             const item = document.createElement("a");
+            item.setAttribute("data-navigo", "");
 
             item.href = `/albums/details/${e.slug}`;
             item.className =
@@ -178,6 +181,7 @@ export const init = async () => {
 
         hits.forEach(e => {
             const item = document.createElement("a");
+            item.setAttribute("data-navigo", "");
 
             item.href = `/playlists/details/${e.slug}`;
             item.className =
@@ -241,6 +245,7 @@ export const init = async () => {
 
         nhacviet.forEach(e => {
             const item = document.createElement("a");
+            item.setAttribute("data-navigo", "");
 
             item.href = `/albums/details/${e.slug}`;
             item.className =
