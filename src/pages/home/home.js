@@ -38,7 +38,7 @@ export const init = async () => {
         moodDiv.className = "flex gap-5 mb-10"
         moods.forEach(e => {
             const p = document.createElement("a");
-            a.setAttribute("data-navigo", "");
+            p.setAttribute("data-navigo", "");
             p.href = `/moods/${e.slug}`
             p.innerText = e.name;
             p.className = "bg-black text-white px-4 py-2 rounded-xl hover:bg-black/20"
