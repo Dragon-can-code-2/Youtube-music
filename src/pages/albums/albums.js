@@ -77,7 +77,7 @@ export const init = async (match) => {
         results.tracks.slice(0, 50).forEach((song, index) => {
 
             const a = document.createElement("a");
-
+            a.setAttribute("data-navigo", "");
             a.href = `/songs/details/${song.id}`;
 
             a.className =

@@ -51,6 +51,7 @@ export const init = async (match) => {
         div.className = "flex flex-col gap-2";
         results.tracks.slice(0, 50).forEach((song, index) => {
             const a = document.createElement("a");
+            a.setAttribute("data-navigo", "");
             a.href = `/songs/details/${song.id}`;
             a.className =
                 "flex items-center gap-4 py-3 px-4 text-white hover:bg-white/10 cursor-pointer transition group";
